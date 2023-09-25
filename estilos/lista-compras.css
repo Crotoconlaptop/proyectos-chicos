@@ -1,0 +1,149 @@
+  .lista-compras {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background: url("super.jpg") no-repeat center center/ cover;
+  }
+  
+   
+  .contenedor-compra {
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    padding: 40px;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+   
+  #ingresar-tarea {
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid #404040;
+    border-radius: 10px;
+  }
+  
+  .boton-lista {
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    color: white;
+    background-color: #1312a8;
+    font-size: 22px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  
+  #lista-de-tareas {
+    width: 80%;
+    margin-top: 20px;
+  }
+   
+  .tarea {
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #407ba6;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .tarea.completada {
+    text-decoration: line-through;
+    background-color: black;
+    border: none;
+  }
+  
+  .tarea p {
+    max-width: 350px;
+  }
+  
+  
+  /*i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }*/
+  
+  .icono-completar {
+    color: rgb(0, 255, 0);
+  }
+  .icono-eliminar {
+    color: rgb(255, 255, 255);
+  }
+  .icono-completar:hover,
+  .icono-eliminar:hover {
+    background-color: rgb(255, 255, 255, 0.523);
+  }
+  
+  @media screen and (max-width: 500px) {
+    .contenedor {
+      height: 90%;
+      width: 90%;
+      background-color: #3E363F;
+      
+    }
+  
+    .boton-lista {
+      color: #3E363F;
+      background-color: #B8B42D;
+    }
+  
+    h1 {
+      font-size: 200%;
+      color: #FFFCE8;
+    }
+  
+    h2 {
+      color: #FFFCE8;
+    }
+  
+    .tarea {
+      display:block;
+      color: white;
+      background-color: #DD403A;
+    }
+  
+    .tarea p {
+      color: black;
+  }
+  
+    .icono-completar {
+      color: #FFFCE8;
+    }
+  
+    .icono-eliminar {
+      color: #FFFCE8;
+    }
+  
+    .tarea.completada {
+    background-color: #697A21;
+    }
+  }
