@@ -1,18 +1,420 @@
-@import "estilos/qrcollarpet.css";
+/*@import "estilos/qrcollarpet.css";
 @import "estilos/clima.css";
 @import "estilos/colores-aleatorios.css";
 @import "estilos/cronometro.css";
 @import "estilos/colores-rgb.css";
 @import "estilos/lista-compras.css";
+*/
 
 *{
     margin: 0;
     padding: 0;
+
   }
 
-section {
-    display: block;
-    margin: 20px 0 20px;
-    border: 5px solid black;
+.seccion {
     
+    display: block;
+    margin: 10px;
+    border: 5px solid black;
+  }
+
+  /* estilos-clima.css */
+
+/* Clase para centrar la sección "clima-app" */
+.clima-app {
+  background-color: #34495e;
+  color: #FFA500;
+  font-family: 'Kanit', sans-serif;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
 }
+
+/* Estilos para el contenido dentro de la sección "clima-app" */
+#contenedor-clima {
+  width: 300px;
+  background-color: black;
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.block-clima {
+  
+  margin: 10px;
+  border-radius: 10px;
+  
+}
+
+.arriba {
+  background-color: #0000FF;
+}
+
+.informacion-contenedor {
+  border-radius: 10px;
+  background-color: #0000FF;
+  margin: 10px;
+  color: #00FF00;
+}
+
+.info-clima {
+  color: #FFA500;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* estilos-cronometro.css */
+
+/* Clase para centrar la sección "cronometro-seccion" */
+.cronometro-seccion {
+  background-color: #34495e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+}
+
+/* Estilos para el contenido dentro de la sección "cronometro-seccion" */
+.contenedor-crono {
+  width: 300px;
+  padding: 20px;
+  background-color: #0000FF;
+  color: #FFA500;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+.contenedor-crono-interno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cronometro {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.contenedor-crono-botones {
+  margin-top: auto; /* Empuja los botones hacia la parte inferior del contenedor */
+}
+
+.boton-cronometro {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 3rem;
+  background-color: #00FF00; /* Color de fondo del botón */
+  color: #34495e; /* Color de texto del botón */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.boton-cronometro:hover {
+  background-color: #FFA500; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* estilos-qr.css */
+
+/* Clase para centrar la sección "qr-collar-pet" */
+.qr-collar-pet {
+  color: #FFA500;
+  background-color: #34495e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+}
+
+/* Estilos para el contenido dentro de la sección "qr-collar-pet" */
+.contenedor-qr {
+  text-align: center;
+  background-color: #0000FF;
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.qr-titulos {
+  margin-bottom: 20px;
+}
+
+.form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputqr {
+  background-color: black;
+  color: #00FF00;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.botonqr {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #00FF00; /* Color de fondo del botón */
+  color: black; /* Color de texto del botón */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.botonqr:hover {
+  background-color: #FFA500; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* estilos-qr.css */
+
+/* ... (otros estilos) ... */
+
+.qr-code {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code img {
+
+  margin: 10px 0;
+  max-width: 100%;
+}
+
+.boton-qr {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #00FF00; /* Color de fondo del botón */
+  color: black; /* Color de texto del botón */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.boton-qr:hover {
+  background-color: #FFA500; /* Color de fondo del botón al pasar el mouse */
+}
+
+
+/* estilos-coloresaleatorios.css */
+
+/* Clase para centrar la sección "coloresaleatorios" */
+.coloresaleatorios {
+  background-color: #2B807B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+}
+
+/* Estilos para el contenido dentro de la sección "coloresaleatorios" */
+.centrar-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contenedor-col-ale {
+  background-color: white;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#color {
+  padding: 10px;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.boton-coloraleatorio {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0000FF; /* Color de fondo del botón */
+  color: #FFA500; /* Color de texto del botón */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.boton-coloraleatorio:hover {
+  color: black;
+  background-color: #00FF00; /* Color de fondo del botón al pasar el mouse */
+}
+
+
+/* estilos-colores-rgb.css */
+
+/* Clase para centrar la sección "colores-rgb" */
+.colores-rgb {
+  background-color: rgb(23, 41, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+}
+
+/* Estilos para el contenido dentro de la sección "colores-rgb" */
+.contenedor-principal-rgb {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.contenedor-interno-rgb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color {
+  margin: 10px 0;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+
+
+/* estilos-lista-compras.css */
+
+/* Clase para centrar la sección "lista-compras" */
+.lista-compras {
+  background-color: #34495e;
+  color: #FFA500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+}
+
+/* Estilos para el contenido dentro de la sección "lista-compras" */
+.contenedor-compra {
+  background-color: #0000FF;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#monto-total {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00FF00; /* Color del monto total (puedes cambiarlo según tu preferencia) */
+}
+
+#ingresar-tarea {
+  background-color: black;
+  color: #00FF00;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.boton-lista {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #00FF00; /* Color de fondo del botón */
+  color: black; /* Color de texto del botón */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.boton-lista:hover {
+  background-color: #FFA500; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* Estilos para la lista de tareas (puedes personalizarlos según tus necesidades) */
+.tareasCantidad {
+  font-size: 1rem;
+}
+
+.tarea {
+  width: 100%;
+  min-height: 70px;
+  font-size: 25px;
+  padding: 10px;
+  margin-top: 10px;
+  color: #0000FF;
+  background-color: #FFA500;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.tarea.completada {
+  text-decoration: line-through;
+  background-color: black;
+  border: none;
+}
+
+.icono-completar {
+  color: #0000FF;
+}
+.icono-eliminar {
+  color: #0000FF;
+}
+.icono-completar:hover,
+.icono-eliminar:hover {
+  background-color: #00FF00;
+}
+/* Agrega estilos adicionales según sea necesario */
+
+
+
+
+/* estilos-fizzbuzz.css */
+
+/* Clase para centrar la sección "fizzbuzz" */
+.fizzbuzz {
+  background-color: #0000FF;
+  color: #FFA500;
+  font-family: 'Kanit', sans-serif;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+}
+
+/* Estilos para el contenido dentro de la sección "fizzbuzz" */
+/* Agrega estilos adicionales según sea necesario */
+
+
+

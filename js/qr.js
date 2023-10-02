@@ -1,4 +1,4 @@
-const wrapper = document.querySelector(".wrapper"),
+const wrapper = document.querySelector(".contenedor-qr"),
 qrInput = wrapper.querySelector(".form input"),
 generateBtn = wrapper.querySelector(".form button"),
 qrImg = wrapper.querySelector(".qr-code img"),
@@ -8,7 +8,7 @@ let preValue;
 
 generateBtn.addEventListener("click", () => {
 
-    let qrInput = "Animal: " + `${document.getElementById("animal").value}`+ " " + " Nombre del animal: " + `${document.getElementById("nombre").value}` + " " + " Nombre del dueño: " + `${document.getElementById("dueño").value}` + " " +" Telefono: " + `${document.getElementById("telefono").value}`;
+    let qrInput = "animal: " + `${document.getElementById("animal").value}`+ " " + " pet's name: " + `${document.getElementById("nombre").value}` + " " + " owner's name: " + `${document.getElementById("dueño").value}` + " " +" phone: " + `${document.getElementById("telefono").value}`;
 
     let qrValue = qrInput;
     if(!qrValue || preValue === qrValue) return;
@@ -27,6 +27,8 @@ qrInput.addEventListener("keyup", () => {
         preValue = "";
     }
 });
+
+
 
 descarga.addEventListener("click", ()=>{
 

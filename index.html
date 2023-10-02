@@ -5,57 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=DM+Serif+Display&family=Kanit&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="estilos/D.png">
+    <title>Practice projects</title>
 </head>
 <body onload="onLoad()">
-    <section class="clima-app">
-        <div id="container">
-            <div class="block">
+    <div class="seccion clima-app">
+        <div id="contenedor-clima">
+            <div class="block-clima arriba">
                 <div id="locacion"></div>
                 <div id="fecha"></div>
                 <div id="descripcion"></div>
             </div>
-            <div class="block">
-                <div class="informacion-container">
-                    Temperatura
-                    <div class="info" id="temperatura"></div>
+            <div class="block-clima abajo">
+                <div class="informacion-contenedor">
+                  Temp
+                    <div class="info-clima" id="temperatura"></div>
                 </div>
-                <div class="informacion-container">
-                    Presión
-                    <div class="info" id="presion"></div>
+                <div class="informacion-contenedor">
+                  Pressure
+                    <div class="info-clima" id="presion"></div>
                 </div>
-                <div class="informacion-container">
-                    Humedad
-                    <div class="info" id="humedad"></div> 
+                <div class="informacion-contenedor">
+                  Humidity
+                    <div class="info-clima" id="humedad"></div> 
                 </div>
             </div>
         </div>
-        <div id="loader" class="loader">Loading...</div>
-    </section>
+    </div>
 
-    <section class="cronometro-seccion">
-        <div class="contenedor-principal">
-            <div class="contenedor-interno">
+    <div class="seccion cronometro-seccion">
+        <div class="contenedor-crono">
+            <div class="contenedor-crono-interno">
               <div id="cronometro">00:00:00</div>
-              <div class="contenedor-botones">
-                <button id="boton-inicio-pausa" class="boton-cronometro iniciar">
+              <div class="contenedor-crono-botones">
+                <button type="button" id="boton-inicio-pausa" class="boton-cronometro iniciar">
                   <i class="bi bi-play-fill"></i>
                 </button>
-                <button id="boton-reiniciar" class="boton-cronometro">
+                <button type="button" id="boton-reiniciar" class="boton-cronometro">
                   <i class="bi bi-arrow-counterclockwise"></i>
                 </button>
               </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="qr-collar-pet">
-        <div class="wrapper">
-            <header>
+    <div class="seccion qr-collar-pet">
+        <div class="contenedor-qr">
+            <div class="qr-titulos">
               <h1>QR Collar Pet</h1>
               <p>Enter your pet's details</p>
-            </header>
+            </div>
             <div class="form" id="form">
               <input class="inputqr" id="animal" type="text" spellcheck="false" placeholder="Animal">
               <input class="inputqr" id="nombre" type="text" spellcheck="false" placeholder="The pet's name">
@@ -66,22 +69,22 @@
             <div class="qr-code">
               <img src="" alt="qr-code">
               
-              <button class="boton-qr" id="descarga">Download</button>
+              <button type="button" class="boton-qr" id="descarga">Download</button>
             
             </div>
           </div>
-    </section>
+    </div>
 
-    <section class="coloresaleatorios" id="colorAleatorio">
+    <div class="seccion coloresaleatorios" id="colorAleatorio">
         <div class="centrar-flex">
-            <div id="contenedor" class="centrar-flex">
+            <div id="contenedor-col-ale" class="centrar-flex">
                 <p id="color">#2B807B</p>
-                <button class="boton-coloraleatorio" id="boton-color">Cambiar Color</button>
+                <button class="boton-coloraleatorio" id="boton-color">Change Color</button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="colores-rgb" id="colores-rgb">
+    <div class="seccion colores-rgb" id="colores-rgb">
         <div class="contenedor-principal-rgb">
             <div class="contenedor-interno-rgb">
               <div class="color">
@@ -104,9 +107,9 @@
       
             </div>  
           </div>
-    </section>
+    </div>
 
-    <section class="lista-compras">
+    <div class="seccion lista-compras">
         <div class="contenedor-compra">
             <h1>Mi Compra</h1>
             <h2 id="monto-total">$$$</h2>
@@ -116,7 +119,9 @@
               <!--tareas-->
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="seccion fizzbuzz"></div>
 
     <script src="js/qr.js"></script>
     <script src="js/file.js"></script>
@@ -125,5 +130,6 @@
     <script src="js/cronometro.js"></script>
     <script src="js/colores-rgb.js"></script>
     <script src="js/lista-compras.js"></script>
+    <script src="js/fizzbuzz.js"></script>
 </body>
 </html>

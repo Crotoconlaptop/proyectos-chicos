@@ -21,16 +21,10 @@ const setWeatherData = data => {
         document.getElementById(key).textContent = weatherData[key]
     });
 
-    cambioLoader();
+  
 }
 
-const cambioLoader = () => {
-    let container = document.getElementById("container");
-    let loader = document.getElementById("loader");
 
-    loader.style.display = "none";
-    container.style.display = "flex";
-}
 
 const getDate = () => {
     let date = new Date();
